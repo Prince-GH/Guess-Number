@@ -29,7 +29,6 @@ function ValidateGuess (GUESS){
       note.innerHTML='INVALID';
       numberGuess.value='';
     } else{
-        updateRemGuess();
         checkRemchance(remGUESS,GUESS);
     }
 }
@@ -47,6 +46,7 @@ function checkRemchance(remGUESS,GUESS){
         numberGuess.value='';
         note.innerHTML='';
         CheckGuess(GUESS);
+        updateRemGuess();
     }
 }
 
