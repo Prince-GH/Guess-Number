@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <samp>Guess Number</samp>
+
+        <form>
+            <input type="text" id="numberGuess" placeholder="1 to 100">
+            <button type="submit" id="submit">GUESS</button>    
+        </form>
+        
+        <p class="note"></p>
+                
+        <div class="preGuess">
+            <i>Previous guessed</i><samp id="preGuess"></samp>
+        </div>
+        
+        <div class="remGuess" style="display: block;">
+            <i>Remaining Guess:</i><samp id="remGuess">8</samp>
+        </div>
+
+        <div class="result"> </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
